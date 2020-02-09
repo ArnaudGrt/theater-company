@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Compagnie N°8 - Troupe de théatre - Les spectacles créés par la Compagnie N°8 sont toujours teintés d’une critique sociale.">
+        <meta name="viewport" content="width=device-width">
+        <link rel="manifest" href="manifest.json">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        <title>Accueil | Compagnie N°8</title>
+
+        <!-- CSS MOBILE -->
+        <link rel="stylesheet" type="text/css" href="styles/css_smallScreen.css">
+        <!-- CSS TABLETTE -->
+        <link rel="stylesheet" type="text/css" href="styles/css_mediumScreen.css" media="screen and (min-width: 640px)">
+        <!-- CSS ORDI -->
+        <link rel="stylesheet" type="text/css" href="styles/css_largeScreen.css" media="screen and (min-width: 1200px)">
+        <link rel="icon" type="image/png" href="img/logoCompagnie_v2.png"/>	
+    </head>
+    <body>
+        <section class="btnMenu_Resp menuNonActif">
+            <span class="transition"></span>
+            <span class="transition"></span>
+            <span class="transition"></span>
+        </section>
+        <nav class="barreLaterale">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 0 L100 0 Q80 50 100 100 L0 100 Z"></path>
+            </svg>
+            <div>
+                <div class="enteteNav">
+                    <div>
+                        <a href="index.html">
+                            <img src="img/logoCompagnie_v2.png" alt="Compagnie n°8">
+                        </a>
+                    </div>
+                </div>
+                <div class="menuNav">
+                    <ul>
+                        <a href="aPropos.html"><li>A PROPOS</li></a>
+                        <a href="spectacles.html"><li>SPECTACLES</li></a>
+                        <a href="medias.html"><li>MEDIAS</li></a>
+                        <a href="contact.html"><li>CONTACT</li></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="containerAccueil">
+            <div class="bloc1_Accueil">
+                <div class="bloc1Sup_Accueil">
+                    <h1>COMPAGNIE N°8</h1>
+                </div>
+                <div class="bloc1Inf_Accueil">
+                    <a href="#lienBloc2_Accueil">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+            <div id="lienBloc2_Accueil" class="bloc2_Accueil">
+                <div class="bloc2Gau_Accueil">
+                    <div>
+                        <img src="img/photo_Accueil.jpg" alt="Compagnie Accueil">
+                    </div>
+                </div>
+                <div class="bloc2Dro_Accueil">
+                    <div>
+                        <p>Comiques, insolents, satiriques, audacieux et décalés. Voilà des adjectifs qui qualifient les artistes de la Compagnie N°8. Les <a class="resTxt_Accueil" href="spectacles.html">spectacles</a> créés par la Compagnie N°8 sont toujours teintés d’une critique sociale. Avec la trilogie Donnez Nous Votre Argent, Homo Sapiens Burocraticus et Monstre(s) d’Humanité elle critique les côtés sombres du monde financier. Avec le dyptique Garden-Party et Cocktail-Party, c’est le monde aristocratique qui est à son tour critiqué sous ses différents aspects. L’esprit de la Compagnie N°8 est de surprendre mais surtout, de faire réfléchir le public à travers ses spectacles.</p>
+                        <p>Pour en apprendre plus sur la Compagnie, rendez-vous sur la <a class="resTxt_Accueil" href="aPropos.html">page</a> lui étant dédiée !</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="bloc1_Footer">
+                    <a href="https://www.facebook.com/compagnienumero8" target="_blank" rel="noopener" class="logo logoFB"><img src="links/logoFB.svg" alt="Facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCPpmg5wYKKWrxxD70vFSvqg" target="_blank" rel="noopener" class="logo logoYT"><img src="links/logoYT.svg" alt="Youtube"></a>
+                </div>
+                <div class="bloc2_Footer">
+                    <ul>
+                        <a href="planSite.html"><li>Plan du site</li></a>
+                        <a href="mentionsLegales.html"><li>Mentions légales</li></a>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </body>
+    <script src="js/script.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+			navigator.serviceWorker.register('sw.js');
+		}
+    </script>
+</html>

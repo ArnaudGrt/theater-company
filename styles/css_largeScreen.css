@@ -1,0 +1,265 @@
+/*  */
+/* BOUTON RESPONSIVE */
+/*  */
+
+.btnMenu_Resp{
+    display: none;
+}
+
+/*  */
+/* BARRE LATERALE */
+/*  */
+
+.barreLaterale{
+    width: 300px;
+    position: relative;
+    transform: translateX(0);
+}
+
+.barreLaterale svg{
+    width: 115%;
+}
+
+.enteteNav{
+    height: 275px;
+}
+
+.enteteNav > div > a{
+    width: 150px;
+    height: 150px;
+}
+
+.enteteNav > div > a:hover{
+    transform: scale(1.1);
+}
+
+.menuNav ul a::after{
+    content: "";
+    position: absolute;
+    transition: all .3s ease 0s;
+    z-index: -1;
+}
+
+.menuNav ul a li{
+    font-size: 1em;
+}
+
+.menuNav ul a:hover li{
+    color: #FAFAFA;
+}
+
+.menuNav ul a::after{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background: var(--orange);
+}
+
+.menuNav ul a:hover{
+    background-color: transparent;
+}
+
+.menuNav ul a:hover::after{
+    right: 0;
+}
+
+/*  */
+/* CONTAINER */
+/*  */
+
+.containerAccueil{
+    flex: 1;
+}
+
+/*  */
+/* ACCUEIL */
+/*  */
+
+.bloc1_Accueil > div div{
+    width: 250px;
+    height: 250px;
+    border-radius: 7px;
+    transform: translateY(-20%);
+}
+
+.bloc1Sup_Accueil h1{
+    font-size: 9.5em;
+}
+
+.bloc1Inf_Accueil a{
+    padding: 1.5em;
+    transition: all .3s;
+}
+
+.bloc1Inf_Accueil a:hover{
+    transform: scale(1.05);
+}
+
+.bloc2Gau_Accueil > div{
+    width: 600px;
+    height: 600px;
+}
+
+.bloc2Gau_Accueil > div > img{
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+.bloc2Dro_Accueil > div{
+    width: 1000px;
+}
+
+.bloc2Dro_Accueil > div > p{
+    font-size: 1.2em;
+}
+
+/*  */
+/* A PROPOS */
+/*  */
+
+.bloc1Gau_aPropos{
+    width: 60%;
+    display: flex;
+}
+
+.bloc1Dro_aPropos{
+    width: 40%;
+    display: flex;
+}
+
+.bloc1Gau_aPropos div{
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+
+.bloc1Dro_aPropos > div{
+    margin: 2em 2em 2em 0;
+}
+
+.bloc1Dro_aPropos > div > p{
+    font-size: 1.1em;
+}
+
+/*  */
+/* SPECTACLES */
+/*  */
+
+.blocSpectacle{
+    width: 575px;
+    margin: 48px auto;
+}
+
+.entete_blocSpectacle .afficheSpectacle{
+    width: 190px;
+    height: 300px;
+}
+
+.description_Spectacle p{
+    font-size: 1em;
+}
+
+.infos_Spectacle a{
+    font-size: .9em;
+    margin: auto;
+    padding: 8px;
+}
+
+.infos_Spectacle a:hover{
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    background: var(--blanc);
+}
+
+.container_ProchainesDates{
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.blocDate{
+    width: 450px;
+}
+
+.affiche_Date div{
+    width: 190px;
+    height: 300px;
+}
+
+.infos_Date h2{
+    font-size: 1.7em;
+}
+
+.infos_Date p{
+    font-size: 1.1em;
+}
+
+/*  */
+/* MEDIAS */
+/*  */
+
+.blocSlider_Medias{
+    margin: 32px 0;
+}
+
+.slider_Medias{
+    width: 840px;
+    height: 600px;
+    margin: 85px auto;
+}
+
+.fleche{
+    width: 50px;
+    height: 50px;
+}
+
+.blocVideo_Medias iframe{
+    width: 560px;
+    height: 315px;
+    margin: 64px auto;
+}
+
+/*  */
+/* CONTACT */
+/*  */
+
+.container_Contact{
+    margin: 3em 0;
+}
+
+.bloc_Contact{
+    width: 560px;
+    margin: 48px auto;
+}
+
+.infos_blocContact > p{
+    margin-left: 1em;
+}
+
+.iframe_Contact{
+    width: 840px;
+    margin: 32px auto;
+}
+
+.iframe_Contact iframe{
+    height: 460px;
+}
+
+/*  */
+/* PLAN DU SITE */
+/*  */
+
+.container_PlanSite ul li{
+    margin: 2em 0;
+}
+
+/*  */
+/* MENTIONS LEGALES */
+/*  */
+
+.container_MentionsLegales h1{
+    font-size: 1.7em;
+}
+
+.container_MentionsLegales p{
+    font-size: 1.1em;
+}
